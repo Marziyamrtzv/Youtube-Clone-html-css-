@@ -1,0 +1,165 @@
+.header {
+  height: 50px;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  position: fixed;
+  background-color: white;
+  top: 0;
+  right: 0;
+  left: 0;
+  border-color: rgb(237, 234, 234);
+  border-style: solid;
+  border-width: 1px;
+  z-index: 100;
+}
+
+.left-section {
+  width: 150px;
+  display: flex;
+  align-items: center;
+  margin-left: 20px;
+}
+
+.middle-section {
+  flex: 1;
+  max-width: 500px;
+  min-width: 100px;
+  display: flex;
+  align-items: center;
+  width: 0;
+}
+
+.searchbar {
+  font-size: 15px;
+  padding-left: 10px;
+  margin-left: 20px;
+  height: 31px;
+  border: solid 1px rgba(128, 128, 128, 0.489);
+  border-radius: 3px;
+  box-shadow: inset 1px 2px 3px rgba(0, 0, 0, 0.105);
+  flex: 1;
+}
+
+.searchbar::placeholder {
+  color: rgb(172, 171, 171);
+}
+
+.right-section {
+  width: 150px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding-left: 15px;
+  padding-right: 30px;
+  flex-shrink: 0;
+  
+  
+}
+
+.menu-icon {
+  height: 25px !important;
+  width: 25px !important;
+  cursor: pointer;
+  margin-left: 5px;
+}
+
+.yt-icon {
+  height: 25px;
+  margin-left: 25px;
+  cursor: pointer;
+  width: 90px;
+}
+
+.search-btn {
+  height: 34px;
+  width: 50px;
+  background-color: rgba(128, 128, 128, 0.283);
+  border: solid 1px rgba(128, 128, 128, 0.418);
+  margin: -1px;
+}
+
+.search-btn img {
+  width: 25px;
+  margin: 0;
+}
+
+.tooltip {
+  position: absolute;
+  bottom: -33px;
+  background-color: rgb(66, 64, 64);
+  padding: 5px;
+  color: white;
+  font-family: Roboto, arial;
+  opacity: 0;
+  transition: opacity 0.15s;
+  cursor: pointer;
+  pointer-events: none;
+  white-space: nowrap;
+}
+
+.search-btn:hover .tooltip,
+.mic-icon:hover .tooltip,
+.tooltip-container:hover .tooltip {
+  opacity: 1;
+}
+
+.mic-icon {
+  width: 34px;
+  height: 34px;
+  border-radius: 20px;
+  border: none;
+  margin-left: 10px;
+  margin-right: 10px;
+  cursor: pointer;
+}
+
+.mic-icon img {
+  width: 20px;
+  margin: 0;
+}
+
+.mic-icon,
+.search-btn,
+.tooltip-container {
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  cursor: pointer;
+}
+
+.video-icon {
+  width: 25px;
+  height: 35px;
+}
+.app-icon {
+  width: 25px;
+}
+
+.bell-icon {
+  width: 25px;
+}
+
+.mychannel {
+  width: 40px;
+  border-radius: 20px;
+  cursor: pointer;
+}
+
+.notif {
+  position: relative;
+}
+
+.notification-count {
+  font-size: 10px;
+  font-family: Roboto, arial;
+  position: absolute;
+  background-color: darkred;
+  color: white;
+  padding: 3px 7px;
+  top: -5px;
+  right: -10px;
+  border-radius: 50px;
+}
